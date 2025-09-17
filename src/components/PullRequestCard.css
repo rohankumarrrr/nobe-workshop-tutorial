@@ -1,0 +1,98 @@
+/* Pull Request Card */
+.pr-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pr-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.pr-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.pr-card__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.pr-card__priority {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.pr-card__meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.pr-card__repo,
+.pr-card__author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pr-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+.pr-card__status {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pr-card__reviewers {
+  color: #666;
+}
+
+.pr-card__created {
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pr-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .pr-card__meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .pr-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

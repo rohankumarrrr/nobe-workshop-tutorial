@@ -1,0 +1,99 @@
+/* Activity Feed */
+.activity-feed {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.activity-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.activity-item:hover {
+  background-color: #f7fafc;
+}
+
+.activity-item:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.activity-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.activity-item__header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.activity-item__user {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.activity-item__repo {
+  color: #666;
+}
+
+.activity-item__action {
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.activity-item__timestamp {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+/* Custom Scrollbar */
+.activity-feed::-webkit-scrollbar {
+  width: 6px;
+}
+
+.activity-feed::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.activity-feed::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.activity-feed::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .activity-item {
+    padding: 0.75rem;
+  }
+  
+  .activity-item__header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
