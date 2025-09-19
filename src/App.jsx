@@ -6,7 +6,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>NOBE Workshop Tutorial Dashboard</h1>
-        <p>GitHub & Code Review Demo</p>
+        <p>GitHub & Code Review Demo. Hi this is Pranav's edit</p>
       </header>
       <main className="app-main">
         <Dashboard />
