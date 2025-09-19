@@ -30,7 +30,7 @@ function PullRequestCard({ pullRequest }) {
           className="pr-card__priority"
           style={{ backgroundColor: getPriorityColor(pullRequest.priority) }}
         >
-          {pullRequest.priority}
+          "this is the change i made"
         </span>
       </div>
       
